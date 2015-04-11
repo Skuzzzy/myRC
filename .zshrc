@@ -48,9 +48,6 @@ export EDITOR='vim'
 autoload -U compinit
 compinit
 
-# correction
-setopt correctall
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -58,3 +55,5 @@ setopt correctall
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 alias zshconfig="vim ~/.zshrc"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
