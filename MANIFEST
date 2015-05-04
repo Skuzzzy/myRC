@@ -1,3 +1,4 @@
 .zshrc
 .scripts/
 .i3/
+.i3status.conf

@@ -146,7 +146,7 @@ mode "resize" {
         # back to normal: Enter, Escape, or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
-	    bindsym $mod+r mode "default"
+	bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
