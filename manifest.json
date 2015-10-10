@@ -1,0 +1,10 @@
+{
+    "files":[
+        ".zshrc",
+        ".i3status.conf"
+    ],
+    "folders":[
+        ".scripts",
+        ".i3"
+    ]
+}
