@@ -5,7 +5,7 @@ export ZSH=/home/dan/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="lambda"
+ZSH_THEME="maran"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -42,6 +42,7 @@ source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
 
+export VISUAL='vim'
 export EDITOR='vim'
 
 # completion
@@ -61,4 +62,4 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 alias q="exit"
 alias c="clear"
 alias auto="xdg-open"
-
+alias lock="i3lock -c 000000"
