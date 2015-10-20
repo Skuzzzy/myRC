@@ -4,11 +4,6 @@ import os
 import json
 import shutil
 
-# Verify program is being run with sudo privileges
-#if os.getuid() != 0:
-#    print "Checking your privileges"
-#    raise Exception("needs sudo")
-
 data = {}
 filename = "manifest.json"
 try:
