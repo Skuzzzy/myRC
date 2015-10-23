@@ -62,4 +62,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 alias q="exit"
 alias c="clear"
 alias auto="xdg-open"
-alias lock="i3lock -c 000000"
+alias lock="i4lock -c 000000"
+
+cdd () { builtin cd "$@" }
+cd () { builtin cd "$@" && ls; }
