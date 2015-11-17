@@ -11,10 +11,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Put plugins here
+Bundle 'tpope/vim-sensible'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'Valloric/YouCompleteMe'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -33,5 +35,13 @@ filetype plugin indent on    " required
 
 let g:NERDTreeIgnore=['\.swp$', '\~$']
 nnoremap <c-n> :NERDTreeToggle<cr>
+" let NERDTreeShowHidden=1 " Just use shift+i to show hidden files
 
 let mapleader = ","
+
+" noremap <c-_> :call NERDComment(0, "Toggle")<cr>
+
+syntax enable
+colorscheme monokai
+
+let g:airline_powerline_fonts = 1
