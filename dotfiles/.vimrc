@@ -13,6 +13,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Put plugins here
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
