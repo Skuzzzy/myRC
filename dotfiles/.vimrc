@@ -17,6 +17,8 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -45,3 +47,7 @@ syntax enable
 colorscheme monokai
 
 let g:airline_powerline_fonts = 1
+
+set number                     " Show current line number
+set relativenumber             " Show relative line numbers
+set cursorline
