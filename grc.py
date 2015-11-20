@@ -38,14 +38,16 @@ err = []
 for file in data["files"]:
     try:
         full_file_path = os.path.join(home, file)
-        target_path = os.path.join(dotfiles_dir, os.path.basename(full_file_path))
+        target_path = os.path.join(dotfiles_dir,
+                                   os.path.basename(full_file_path))
         print "Copying file {} -> {}".format(full_file_path, target_path)
         shutil.copyfile(full_file_path, target_path)
         print "\tSuccess!"
     except Exception as e:
         print "\t{}".format(e)
         err.append(full_file_path)
-        print "\tERROR: Failed to copy file {} -> {}".format(full_file_path, target_path)
+        print "\tERROR: Failed to copy file {} -> {}" \
+            .format(full_file_path, target_path)
 
 # Copy all folders
 for folder in data["folders"]:
@@ -60,7 +62,8 @@ for folder in data["folders"]:
     except Exception as e:
         print "\t{}".format(e)
         err.append(full_folder_path)
-        print "\tERROR: Failed to copy folder {} -> {}".format(full_folder_path, target_path)
+        print "\tERROR: Failed to copy folder {} -> {}". \
+            format(full_folder_path, target_path)
 
 print "Completed"
 print "Result: "
@@ -69,4 +72,3 @@ if len(err) != 0:
         print "\tError on file/folder {}".format(each)
 else:
     print "\tSuccess! No errors"
-

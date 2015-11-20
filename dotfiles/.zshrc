@@ -66,3 +66,5 @@ alias lock="i4lock -c 000000"
 
 cdd () { builtin cd "$@" }
 cd () { builtin cd "$@" && ls; }
+
+alias gitlog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
