@@ -52,6 +52,8 @@ for folder in data["folders"]:
     try:
         target_path = os.path.join(home, folder)
         full_folder_path = os.path.join(dotfolders_dir, folder)
+        if os.path.exists(target_path):
+            shutil.rmtree(target_path)
         print "Copying folder {} -> {}".format(full_folder_path, target_path)
         shutil.copytree(full_folder_path, target_path)
         print "\tSuccess!"

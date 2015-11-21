@@ -67,4 +67,8 @@ alias lock="i4lock -c 000000"
 cdd () { builtin cd "$@" }
 cd () { builtin cd "$@" && ls; }
 
+#tmux () { /usr/bin/tmux -2  "$@" }
+alias tmux="tmux -2"
+
 alias gitlog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+

@@ -2,7 +2,8 @@
     "files":[
         ".zshrc",
         ".i3status.conf",
-	".vimrc"
+	".vimrc",
+	".tmux.conf"
     ],
     "folders":[
         ".scripts",
