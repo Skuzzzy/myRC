@@ -7,7 +7,6 @@
     "folders":[
         ".scripts",
         ".i3",
-	".vim",
 	".fonts"
     ]
 }
