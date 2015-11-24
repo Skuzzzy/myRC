@@ -25,7 +25,7 @@ floating_modifier $mod
 
 # Making stuff pretty
 hide_edge_borders both
-exec --no-startup-id feh --bg-scale ~/Pictures/background.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/background3.jpg
 
 # start a terminal
 # bindsym $mod+Return exec "gnome-terminal -e tmux"
@@ -162,7 +162,7 @@ exec xrandr --output HDMI-0 --auto --right-of DVI-0
 # Mouse Acceleration
 exec xset m 1/1 0
 # Who uses caps lock
-setxkbmap -option ctrl:nocaps
+exec setxkbmap -option ctrl:nocaps
 
 # workspace setup for desktop
 workspace 1 output DVI-0

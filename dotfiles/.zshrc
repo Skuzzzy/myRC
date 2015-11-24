@@ -66,6 +66,7 @@ alias lock="i4lock -c 000000"
 
 cdd () { builtin cd "$@" }
 cd () { builtin cd "$@" && ls; }
+alias cbg="feh --bg-scale"
 
 #tmux () { /usr/bin/tmux -2  "$@" }
 alias tmux="tmux -2"
