@@ -2,13 +2,12 @@
     "files":[
         ".zshrc",
         ".i3status.conf",
-	".vimrc",
-	".tmux.conf"
+		".vimrc",
+		".tmux.conf"
     ],
     "folders":[
         ".scripts",
         ".i3",
-	".vim",
-	".fonts"
+		".fonts"
     ]
 }
