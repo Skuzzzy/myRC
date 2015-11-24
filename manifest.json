@@ -1,13 +1,13 @@
 {
-    "files":[
-        ".zshrc",
-        ".i3status.conf",
-		".vimrc",
-		".tmux.conf"
-    ],
-    "folders":[
-        ".scripts",
-        ".i3",
-		".fonts"
-    ]
+  "files":[
+    ".zshrc",
+    ".i3status.conf",
+    ".vimrc",
+    ".tmux.conf"
+  ],
+  "folders":[
+    ".scripts",
+    ".i3",
+    ".fonts"
+  ]
 }
