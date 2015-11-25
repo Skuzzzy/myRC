@@ -10,7 +10,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" Put plugins here Bundle 'tpope/vim-sensible'
+" Put plugins here
+Bundle 'tpope/vim-sensible'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'bronson/vim-trailing-whitespace'
