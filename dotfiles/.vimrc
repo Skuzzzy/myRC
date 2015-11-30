@@ -94,3 +94,6 @@ inoremap {{     {
 inoremap {}     {}
 
 set laststatus=2 " fix wierd airline issue
+
+set smartcase " for searching
+set incsearch " for searching
