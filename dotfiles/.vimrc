@@ -11,7 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Put plugins here
-Bundle 'tpope/vim-sensible'
+"Bundle 'tpope/vim-sensible'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'bronson/vim-trailing-whitespace'
@@ -84,7 +84,7 @@ inoremap <esc>^[ <esc>^[
 
 set showmatch
 
-set expandtab
+"set expandtab # insert spaces instead of tabs
 set shiftwidth=4
 set softtabstop=4
 
@@ -92,3 +92,5 @@ inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
+
+set laststatus=2 " fix wierd airline issue
