@@ -83,6 +83,8 @@ inoremap <esc>^[ <esc>^[
 "inoremap <right> <nop>
 
 set showmatch
+set encoding=utf-8
+set hlsearch
 
 set expandtab
 set shiftwidth=4
