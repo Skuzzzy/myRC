@@ -25,7 +25,7 @@ floating_modifier $mod
 
 # Making stuff pretty
 hide_edge_borders both
-exec --no-startup-id feh --bg-scale ~/Pictures/background2.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/background1.jpg
 
 # start a terminal
 # bindsym $mod+Return exec "gnome-terminal -e tmux"
@@ -155,6 +155,7 @@ bindsym $mod+Shift+t exec "sh ~/.scripts/toggleTouchpad.sh
 
 # Screen Setup
 exec xrandr --output HDMI-0 --auto --right-of DVI-0
+#exec xrandr --output HDMI-0 --auto --same-as DVI-0
 #bindsym $mod+Shift+h focus output DVI-0
 #bindsym $mod+Shift+l focus output HDMI-0
 # Mouse Acceleration
@@ -186,3 +187,5 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 # cinnamon workspace cycle
 bindsym Control+$mod+Left workspace prev
 bindsym Control+$mod+Right workspace next
+
+bindsym Control+$mod+d exec "sh ~/.scripts/dmenu\ with\ files.sh"

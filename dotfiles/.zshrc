@@ -72,3 +72,4 @@ alias cbg="feh --bg-scale"
 alias tmux="tmux -2"
 
 alias gitlog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+
