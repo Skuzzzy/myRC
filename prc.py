@@ -14,7 +14,7 @@ try:
     print "Loading {}".format(filename)
     with open(filename) as manifest:
         data = json.load(manifest)
-except IOError:
+except IOError as io:
     raise Exception("{} missing".format(filename))
 
 # Create important directories
@@ -68,7 +68,7 @@ for folder in data["folders"]:
 
 print "Completed"
 print "Result: "
-if len(err) != 0:
+if err:
     for each in err:
         print "\tError on file/folder {}".format(each)
 else:
