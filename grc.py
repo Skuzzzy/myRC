@@ -1,5 +1,3 @@
-__author__ = 'dan'
-
 import os
 import json
 import shutil
