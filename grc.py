@@ -15,7 +15,7 @@ try:
     with open(filename) as manifest:
         data = json.load(manifest)
 except IOError:
-    raise Exception("manifest.json missing")
+    raise Exception("{} missing".format(filename))
 
 # Create important directories
 grc_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "conf", config_name)

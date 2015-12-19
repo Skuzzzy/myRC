@@ -1,0 +1,33 @@
+{
+  "ppa":[
+    "ppa:linuxgndu/sqlitebrowser",
+    "ppa:maarten-baert/simplescreenrecorder"
+  ],
+  "package":[
+      "curl",
+      "git",
+      "build-essential",
+      "g++",
+      "python3.4",
+      "zsh",
+      "vim",
+      "colordiff",
+      "golang",
+      "units",
+      "i3",
+      "ranger",
+      "tmux",
+      "mpv",
+      "ibus-mozc",
+      "xfce4-screenshooter",
+      "dmenu",
+      "i3status",
+      "pcmanfm",
+      "i3lock",
+      "python3-pip",
+      "sbcl",
+      "cmake",
+      "pavucontrol",
+      "pylint"
+  ]
+}
