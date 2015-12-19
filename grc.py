@@ -21,7 +21,6 @@ except IOError:
 
 # Create important directories
 grc_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "conf", config_name)
-print grc_dir
 
 # Create relavant directories
 dotfiles_dir = os.path.join(grc_dir, 'dotfiles')

@@ -3,6 +3,12 @@ __author__ = 'dan'
 import os
 import json
 import shutil
+import sys
+
+config_name = "default"
+if len(sys.argv) > 1:
+    config_name = sys.argv[1]
+print "Grabbing \"{}\" configuration".format(config_name)
 
 data = {}
 filename = "manifest.json"
@@ -14,11 +20,11 @@ except IOError:
     raise Exception("manifest.json missing")
 
 # Create important directories
-grc_dir = os.path.dirname(os.path.abspath(__file__))
+prc_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "conf", config_name)
 
 # Create relavant directories
-dotfiles_dir = os.path.join(grc_dir, 'dotfiles')
-dotfolders_dir = os.path.join(grc_dir, 'dotfolders')
+dotfiles_dir = os.path.join(prc_dir, 'dotfiles')
+dotfolders_dir = os.path.join(prc_dir, 'dotfolders')
 
 if not os.path.exists(dotfiles_dir):
     print "Creating dotfiles directory"
