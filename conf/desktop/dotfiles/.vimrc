@@ -105,3 +105,4 @@ set colorcolumn=80 " Highlight column 80 for formatting suggestions
 
 set number " Show current line number
 " set relativenumber             " Show relative line numbers
+

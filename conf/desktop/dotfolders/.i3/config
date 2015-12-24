@@ -25,7 +25,7 @@ floating_modifier $mod
 
 # Making stuff pretty
 hide_edge_borders both
-exec --no-startup-id feh --bg-scale ~/Pictures/background1.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/desktop_background.jpg
 
 # start a terminal
 # bindsym $mod+Return exec "gnome-terminal -e tmux"
