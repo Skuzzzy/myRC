@@ -1,2 +1,2 @@
-xinput set-prop 12 "Device Accel Profile" -1
-xinput set-prop 12 "Device Accel Constant Deceleration" 2
+xinput set-prop 11 "Device Accel Profile" -1
+xinput set-prop 11 "Device Accel Constant Deceleration" 2
