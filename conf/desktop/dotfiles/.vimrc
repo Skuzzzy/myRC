@@ -22,6 +22,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
 Plugin 'elzr/vim-json'
 Plugin 'ConradIrwin/vim-bracketed-paste'
+Plugin 'luochen1990/rainbow'
+Plugin 'kovisoft/slimv'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -107,3 +109,5 @@ set number " Show current line number
 " set relativenumber             " Show relative line numbers
 
 set nowrap
+
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
