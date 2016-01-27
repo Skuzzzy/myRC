@@ -57,8 +57,6 @@ compinit
 
 alias zshconfig="vim ~/.zshrc"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 alias q="exit"
 alias c="clear"
 alias auto="xdg-open"
@@ -68,7 +66,7 @@ cdd () { builtin cd "$@" }
 cd () { builtin cd "$@" && ls; }
 alias cbg="feh --bg-scale"
 
-#tmux () { /usr/bin/tmux -2  "$@" }
 alias tmux="tmux -2"
 
 alias gitlog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+
