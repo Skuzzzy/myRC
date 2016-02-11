@@ -111,3 +111,8 @@ set number " Show current line number
 set nowrap
 
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
