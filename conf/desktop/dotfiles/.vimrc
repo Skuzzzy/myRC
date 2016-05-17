@@ -11,7 +11,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Put plugins here
-"Bundle 'tpope/vim-sensible'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'bronson/vim-trailing-whitespace'
@@ -44,9 +43,8 @@ let g:NERDTreeIgnore=['\.swp$', '\~$'] " Nerd tree ignore patterns (see docs)
 nnoremap <c-n> :NERDTreeToggle<cr>
 " let NERDTreeShowHidden=1 " Just use shift+i to show hidden files
 
-noremap <c-c> :call NERDComment(1, "Toggle")<cr>
-
-let mapleader = ","
+let mapleader = " "
+noremap <Leader>z :call NERDComment(1, "Toggle")<cr>
 
 " Get my clown colors in here
 syntax enable
@@ -73,8 +71,6 @@ inoremap jk <esc>
 inoremap Jk <esc>
 inoremap jK <esc>
 inoremap JK <esc>
-"inoremap <special> <esc> <nop>
-"inoremap <esc>^[ <esc>^[
 
 " REEEEEEEE
 nnoremap <up> <nop>
@@ -109,7 +105,7 @@ set incsearch " begin searching immediately (do not wait for enter)
 set colorcolumn=80 " Highlight column 80 for formatting suggestions
 
 set number " Show current line number
-" set relativenumber             " Show relative line numbers
+set relativenumber             " Show relative line numbers
 
 set nowrap
 
@@ -120,4 +116,4 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
-set scrolloff=5 " Keep 3 lines below and above the cursor
+set scrolloff=5
