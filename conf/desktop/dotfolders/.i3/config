@@ -25,7 +25,7 @@ floating_modifier $mod
 
 # Making stuff pretty
 hide_edge_borders both
-exec --no-startup-id feh --bg-scale ~/Pictures/desktop_background.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/background1.jpg
 
 # start a terminal
 # bindsym $mod+Return exec "gnome-terminal -e tmux"
@@ -41,6 +41,7 @@ bindsym $mod+Shift+q kill
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -x 550 -y 350 -w 450 -h 30 -l 7 -fn 'Lucida Grande 8' -nb '#201F1D' -nf '#eddec9' -sb '#8F3724' -sf '#eddec9'" # REQUIRES DMENU 2
+bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -x 550 -y 350 -w 450 -h 30 -l 7 -fn 'Lucida Grande 8' -nb '#201F1D' -nf '#eddec9' -sb '#8F3724' -sf '#eddec9'" # REQUIRES DMENU 2
 
 # change focus
 bindsym $mod+h focus left
@@ -84,7 +85,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle # Temp commented out because I never use this
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -165,8 +166,8 @@ bindsym --no-startup-id $mod+Shift+m exec "sh ~/.scripts/suspend.sh
 bindsym $mod+Shift+t exec "sh ~/.scripts/toggleTouchpad.sh
 
 # Screen Setup
-exec xrandr --output HDMI-0 --auto --right-of DVI-0
-#exec xrandr --output HDMI-0 --auto --same-as DVI-0
+exec xrandr --output HDMI-0 --auto --right-of DVI-1
+#exec xrandr --output HDMI-0 --auto --same-as DVI-1
 #bindsym $mod+Shift+h focus output DVI-0
 #bindsym $mod+Shift+l focus output HDMI-0
 # Mouse Acceleration
@@ -175,11 +176,11 @@ exec xset m 1/1 0
 exec setxkbmap -option ctrl:nocaps
 
 # workspace setup for desktop
-workspace 1 output DVI-0
-workspace 2 output DVI-0
-workspace 3 output DVI-0
-workspace 4 output DVI-0
-workspace 5 output DVI-0
+workspace 1 output DVI-1
+workspace 2 output DVI-1
+workspace 3 output DVI-1
+workspace 4 output DVI-1
+workspace 5 output DVI-1
 workspace 6 output HDMI-0
 workspace 7 output HDMI-0
 workspace 8 output HDMI-0
