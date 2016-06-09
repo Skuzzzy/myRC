@@ -9,6 +9,7 @@
     ".scripts",
     ".i3",
     ".fonts",
-    ".vim/colors"
+    ".vim/colors",
+    ".emacs.d"
   ]
 }
