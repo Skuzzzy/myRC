@@ -105,7 +105,7 @@ set incsearch " begin searching immediately (do not wait for enter)
 set colorcolumn=80 " Highlight column 80 for formatting suggestions
 
 set number " Show current line number
-set relativenumber             " Show relative line numbers
+"set relativenumber             " Show relative line numbers
 
 set nowrap
 
