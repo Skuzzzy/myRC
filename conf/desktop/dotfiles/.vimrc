@@ -86,11 +86,13 @@ inoremap <right> <nop>
 
 set showmatch " show matching parens
 set encoding=utf-8
-set hlsearch " Highlight all matches of search
 
-"set expandtab # insert spaces instead of tabs
 set shiftwidth=4
 set softtabstop=4
+" Use spaces instead of tabs
+set expandtab
+" Be smart when using tabs ;)
+set smarttab
 
 " Dumb parenthesis stuff
 inoremap {      {}<Left>
@@ -100,9 +102,13 @@ inoremap {}     {}
 
 set laststatus=2 " fix wierd airline issue
 
+
+" SEARCH START
 set incsearch " begin searching immediately (do not wait for enter)
 set ignorecase " ignore case by default
 set smartcase " search only is case sensitive if search includes capital letter
+set hlsearch " Highlight all matches of search
+" SEARCH END
 
 set colorcolumn=80 " Highlight column 80 for formatting suggestions
 
@@ -118,3 +124,28 @@ if has("autocmd")
 endif
 
 set scrolloff=5 " Keep 3 lines below and above the cursor
+
+set list
+
+set autoread " Load files changed outside of vim
+
+" Save ticks
+nmap <leader>w :w!<cr>
+
+" Don't redraw while executing macros (good performance config)
+"set lazyredraw
+
+" Testing this window setup
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Useful mappings for managing tabs
+map <leader>tt :tabnew<cr>
+map <leader>tl :tabnext<cr>
+map <leader>th :tabprevious<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove 
+
