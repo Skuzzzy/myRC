@@ -38,13 +38,14 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+
+let mapleader = " "
+
+nnoremap <Leader>n :NERDTreeToggle<cr>
 let g:NERDTreeIgnore=['\.swp$', '\~$'] " Nerd tree ignore patterns (see docs)
-nnoremap <c-n> :NERDTreeToggle<cr>
 " let NERDTreeShowHidden=1 " Just use shift+i to show hidden files
-
-noremap <c-c> :call NERDComment(1, "Toggle")<cr>
-
-let mapleader = ","
+"
+noremap <Leader><Leader> :call NERDComment(1, "Toggle")<cr>
 
 " Get my clown colors in here
 syntax enable
@@ -71,8 +72,6 @@ inoremap jk <esc>
 inoremap Jk <esc>
 inoremap jK <esc>
 inoremap JK <esc>
-"inoremap <special> <esc> <nop>
-"inoremap <esc>^[ <esc>^[
 
 " REEEEEEEE
 nnoremap <up> <nop>
@@ -101,15 +100,15 @@ inoremap {}     {}
 
 set laststatus=2 " fix wierd airline issue
 
-set smartcase " search only is case sensitive if search includes capital letter
 set incsearch " begin searching immediately (do not wait for enter)
+set ignorecase " ignore case by default
+set smartcase " search only is case sensitive if search includes capital letter
 
 set colorcolumn=80 " Highlight column 80 for formatting suggestions
 
 set number " Show current line number
-" set relativenumber             " Show relative line numbers
 
-set nowrap
+set nowrap " Do not wrap lines
 
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
