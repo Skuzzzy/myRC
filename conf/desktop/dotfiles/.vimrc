@@ -14,6 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Skuzzzy/vim-trailing-whitespace'
+Bundle 'ctrlpvim/ctrlp.vim'
 "Bundle 'Valloric/YouCompleteMe'
 "Plugin 'bling/vim-airline'
 "Plugin 'tpope/vim-fugitive'
@@ -149,3 +150,7 @@ map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove 
 
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
