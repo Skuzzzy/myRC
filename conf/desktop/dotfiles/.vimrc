@@ -13,16 +13,15 @@ Plugin 'VundleVim/Vundle.vim'
 " Put plugins here
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'Valloric/YouCompleteMe'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/syntastic'
-Plugin 'elzr/vim-json'
-Plugin 'ConradIrwin/vim-bracketed-paste'
-Plugin 'luochen1990/rainbow'
-Plugin 'kovisoft/slimv'
+Bundle 'Skuzzzy/vim-trailing-whitespace'
+"Bundle 'Valloric/YouCompleteMe'
+"Plugin 'bling/vim-airline'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'airblade/vim-gitgutter'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'elzr/vim-json'
+"Plugin 'ConradIrwin/vim-bracketed-paste'
+"Plugin 'luochen1990/rainbow'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,8 +42,9 @@ let g:NERDTreeIgnore=['\.swp$', '\~$'] " Nerd tree ignore patterns (see docs)
 nnoremap <c-n> :NERDTreeToggle<cr>
 " let NERDTreeShowHidden=1 " Just use shift+i to show hidden files
 
-let mapleader = " "
-noremap <Leader>z :call NERDComment(1, "Toggle")<cr>
+noremap <c-c> :call NERDComment(1, "Toggle")<cr>
+
+let mapleader = ","
 
 " Get my clown colors in here
 syntax enable
@@ -71,6 +71,8 @@ inoremap jk <esc>
 inoremap Jk <esc>
 inoremap jK <esc>
 inoremap JK <esc>
+"inoremap <special> <esc> <nop>
+"inoremap <esc>^[ <esc>^[
 
 " REEEEEEEE
 nnoremap <up> <nop>
@@ -105,7 +107,7 @@ set incsearch " begin searching immediately (do not wait for enter)
 set colorcolumn=80 " Highlight column 80 for formatting suggestions
 
 set number " Show current line number
-"set relativenumber             " Show relative line numbers
+" set relativenumber             " Show relative line numbers
 
 set nowrap
 
@@ -116,4 +118,4 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
-set scrolloff=5
+set scrolloff=5 " Keep 3 lines below and above the cursor
