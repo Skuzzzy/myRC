@@ -28,7 +28,7 @@
           `((".*" ,temporary-file-directory t)))
 
 ; Setup relative line numbers
-  (relative-line-numbers-mode)
+  ;; (relative-line-numbers-mode)
 
 ; Enable evil leader
   (global-evil-leader-mode)
@@ -61,7 +61,7 @@
   (add-hook 'c-mode 'set-newline-and-indent)
 
 ; Enable Line Numbers
-  (linum-mode)
+  (global-linum-mode 1)
 
 ; Set indent
   (global-set-key "\C-m" 'newline-and-indent)
