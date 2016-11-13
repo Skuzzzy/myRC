@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -39,9 +39,9 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -x 550 -y 350 -w 450 -h 30 -l 7 -fn 'Lucida Grande 8' -nb '#201F1D' -nf '#eddec9' -sb '#8F3724' -sf '#eddec9'" # REQUIRES DMENU 2
-bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -x 550 -y 350 -w 450 -h 30 -l 7 -fn 'Lucida Grande 8' -nb '#201F1D' -nf '#eddec9' -sb '#8F3724' -sf '#eddec9'" # REQUIRES DMENU 2
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -x 550 -y 350 -w 450 -h 30 -l 7 -fn 'Lucida Grande 8' -nb '#201F1D' -nf '#eddec9' -sb '#8F3724' -sf '#eddec9'" # REQUIRES DMENU 2
+#bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -x 550 -y 350 -w 450 -h 30 -l 7 -fn 'Lucida Grande 8' -nb '#201F1D' -nf '#eddec9' -sb '#8F3724' -sf '#eddec9'" # REQUIRES DMENU 2
 
 # change focus
 bindsym $mod+h focus left
@@ -157,7 +157,7 @@ bar {
 	inactive_workspace #333333 #222222 #888888
 	urgent_workspace   #2f343a #900000 #ffffff
     }
-    status_command py3status
+    status_command i3status
     position top
 }
 
@@ -201,3 +201,4 @@ bindsym Control+$mod+Left workspace prev
 bindsym Control+$mod+Right workspace next
 
 bindsym Control+$mod+d exec "sh ~/.scripts/dmenu\ with\ files.sh"
+bindsym Control+$mod+s exec "gnome-screenshot"
