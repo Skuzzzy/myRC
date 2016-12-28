@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -201,3 +201,4 @@ bindsym Control+$mod+Left workspace prev
 bindsym Control+$mod+Right workspace next
 
 bindsym Control+$mod+d exec "sh ~/.scripts/dmenu\ with\ files.sh"
+bindsym Control+$mod+s exec "gnome-screenshot"
