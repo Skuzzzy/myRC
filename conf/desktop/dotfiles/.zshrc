@@ -71,3 +71,4 @@ alias tmux="tmux -2"
 alias gitlog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 set editing-mode vi
 alias jl='FILENAME=~/journal/$(date +"%Y_%m_%d.txt"); vim $FILENAME'
+export GOPATH=$HOME/go

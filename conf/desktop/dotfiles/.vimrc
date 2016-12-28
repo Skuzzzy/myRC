@@ -43,6 +43,7 @@ filetype plugin indent on    " required
 let mapleader = " "
 
 nnoremap <Leader>n :NERDTreeToggle<cr>
+
 let g:NERDTreeIgnore=['\.swp$', '\~$'] " Nerd tree ignore patterns (see docs)
 " let NERDTreeShowHidden=1 " Just use shift+i to show hidden files
 "
@@ -148,7 +149,7 @@ map <leader>tl :tabnext<cr>
 map <leader>th :tabprevious<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove 
+map <leader>tm :tabmove
 
 
 let g:ctrlp_map = '<c-p>'
@@ -159,3 +160,4 @@ noremap  <buffer> <silent> k gk
 noremap  <buffer> <silent> j gj
 noremap  <buffer> <silent> 0 g0
 noremap  <buffer> <silent> $ g$
+
