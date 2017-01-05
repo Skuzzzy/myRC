@@ -130,6 +130,7 @@ endif
 set scrolloff=5 " Keep 3 lines below and above the cursor
 
 set list
+set listchars=eol:¬
 
 set autoread " Load files changed outside of vim
 

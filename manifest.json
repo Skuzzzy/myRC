@@ -3,7 +3,8 @@
     ".zshrc",
     ".i3status.conf",
     ".vimrc",
-    ".tmux.conf"
+    ".tmux.conf",
+    ".local/share/Steam/run_steam.bash"
   ],
   "folders":[
     ".scripts",
