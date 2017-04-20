@@ -202,3 +202,5 @@ bindsym Control+$mod+Right workspace next
 
 bindsym Control+$mod+d exec "sh ~/.scripts/dmenu\ with\ files.sh"
 bindsym Control+$mod+s exec "gnome-screenshot"
+
+

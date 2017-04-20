@@ -101,6 +101,7 @@ set colorcolumn=80 " Highlight column 80 for formatting suggestions
 set number " Show current line number
 
 set nowrap " Do not wrap lines
+set hidden " Sane handling of buffers
 
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
@@ -190,3 +191,4 @@ if exists("+showtabline")
     set showtabline=1
     highlight link TabNum Special
 endif
+
