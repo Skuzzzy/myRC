@@ -79,7 +79,8 @@ set showmatch " show matching parens
 set encoding=utf-8
 
 set shiftwidth=4
-set softtabstop=4
+set softtabstop=4 " Backspace behaves properly
+
 set tabstop=4
 " Use spaces instead of tabs
 set expandtab
@@ -113,7 +114,7 @@ endif
 set scrolloff=5 " Keep 3 lines below and above the cursor
 
 set list
-set listchars=eol:¬
+set listchars=tab:▸\ ,eol:¬
 
 set autoread " Load files changed outside of vim
 

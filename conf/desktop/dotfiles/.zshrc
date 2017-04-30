@@ -52,15 +52,12 @@ compinit
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
 alias zshconfig="vim ~/.zshrc"
 
 alias q="exit"
 alias c="clear"
 alias auto="xdg-open"
-alias lock="i4lock -c 000000"
+alias lock="i3lock -c 000000"
 
 cdd () { builtin cd "$@" }
 cd () { builtin cd "$@" && ls; }
@@ -69,7 +66,9 @@ alias cbg="feh --bg-scale"
 alias tmux="tmux -2"
 
 alias gitlog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
-set editing-mode vi
-alias jl='FILENAME=~/journal/$(date +"%Y_%m_%d.txt"); vim $FILENAME'
-export GOPATH=$HOME/go
-export PATH=$PATH:$HOME/go/bin
+# alias jl='FILENAME=~/journal/$(date +"%Y_%m_%d.txt"); vim $FILENAME'
+# export GOPATH=$HOME/go
+# export PATH=$PATH:$HOME/go/bin
+
+# Disable ctrl+s
+stty -ixon
