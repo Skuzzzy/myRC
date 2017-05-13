@@ -193,3 +193,5 @@ if exists("+showtabline")
     highlight link TabNum Special
 endif
 
+set undofile " Maintain undo history between sessions
+set undodir=~/.vim/undodir
